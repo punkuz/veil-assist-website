@@ -139,9 +139,13 @@ h1 em, h2 em { color: transparent; font-style: normal; background: linear-gradie
 .privacy-pulse span { width: 56px; height: 56px; z-index: 2; display: grid; place-items: center; border-radius: 50%; color: #08131a; background: linear-gradient(135deg,#a5eaff,#58caf9); box-shadow: 0 0 40px rgba(103,211,255,.22); }
 .privacy-pulse i { position: absolute; inset: 22px; border: 1px solid rgba(103,211,255,.22); border-radius: 50%; animation: pulse 3s ease-out infinite; }
 .privacy-pulse i:nth-child(3) { animation-delay: -1s; }.privacy-pulse i:nth-child(4) { animation-delay: -2s; }
-.key-row { display: flex; justify-content: center; gap: 8px; padding-top: 32px; }
-kbd { min-width: 58px; height: 58px; display: grid; place-items: center; padding: 0 17px; border: 1px solid rgba(255,255,255,.12); border-bottom-width: 4px; border-radius: 12px; color: #dfe6ee; background: linear-gradient(#19212c,#10161f); box-shadow: 0 13px 30px rgba(0,0,0,.3); font-size: 18px; }
-kbd:last-child { min-width: 108px; font-size: 12px; }
+.shortcut-demo { display: grid; gap: 13px; padding-top: 6px; }
+.shortcut-line { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.shortcut-line > span { color: #667283; font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
+.key-row { display: flex; justify-content: center; gap: 7px; }
+kbd { min-width: 42px; height: 42px; display: grid; place-items: center; padding: 0 12px; border: 1px solid rgba(255,255,255,.12); border-bottom-width: 3px; border-radius: 10px; color: #dfe6ee; background: linear-gradient(#19212c,#10161f); box-shadow: 0 10px 24px rgba(0,0,0,.3); font-size: 15px; }
+kbd.key-wide { min-width: 82px; font-size: 11px; }
+kbd.key-arrows { min-width: 108px; color: var(--blue); font-size: 13px; letter-spacing: .12em; }
 
 .privacy-section { position: relative; overflow: hidden; padding: 160px 0; border-block: 1px solid rgba(255,255,255,.07); background: #080b10; }
 .privacy-aura { position: absolute; width: 760px; height: 760px; right: -200px; top: -160px; border-radius: 50%; background: radial-gradient(circle,rgba(37,113,255,.14),transparent 67%); filter: blur(20px); }

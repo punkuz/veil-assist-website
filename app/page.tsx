@@ -26,11 +26,10 @@ export default function Home() {
 
       <section className="hero shell-width" id="top">
         <div className="hero-glow" aria-hidden="true" />
-        <div className="eyebrow reveal"><span /> Your private desktop copilot</div>
+        <div className="eyebrow reveal"><span /> Your invisible desktop assistant</div>
         <h1 className="reveal delay-1">Stay present.<br /><em>Veil keeps up.</em></h1>
         <p className="hero-copy reveal delay-2">
-          A calm, floating copilot for calls and presentations. Veil listens,
-          understands what is on screen, and helps you answer in the moment.
+          Real-time, invisible assistance for your calls and presentations.
         </p>
         <div className="hero-actions reveal delay-3">
           <a className="button button-primary" href="#product">See Veil in action <span>↓</span></a>
@@ -92,7 +91,7 @@ export default function Home() {
         <div className="section-kicker">ONE CALM SURFACE</div>
         <div className="section-heading">
           <h2>Everything you need.<br /><em>Nothing in the way.</em></h2>
-          <p>Veil turns the noise of a live conversation into a clear next step—without dragging you out of the room.</p>
+          <p>Veil turns the noise of a live conversation into a clear next step without dragging you out of the room.</p>
         </div>
 
         <div className="bento-grid">
@@ -124,8 +123,11 @@ export default function Home() {
           </article>
 
           <article className="bento bento-small shortcut-card">
-            <div className="key-row"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>Space</kbd></div>
-            <div className="card-copy"><span className="card-number">04</span><h3>There when you need it</h3><p>Summon or hide Veil in an instant. Keyboard-first and always close at hand.</p></div>
+            <div className="shortcut-demo">
+              <div className="shortcut-line"><span>Show or hide</span><div className="key-row"><kbd>⌘</kbd><kbd>⇧</kbd><kbd className="key-wide">Space</kbd></div></div>
+              <div className="shortcut-line"><span>Move Veil</span><div className="key-row"><kbd>⌘</kbd><kbd>⌥</kbd><kbd className="key-arrows">← ↑ ↓ →</kbd></div></div>
+            </div>
+            <div className="card-copy"><span className="card-number">04</span><h3>There when you need it</h3><p>Summon, hide, or reposition Veil without leaving the keyboard. Always close, never in the way.</p></div>
           </article>
         </div>
       </section>
@@ -136,7 +138,8 @@ export default function Home() {
           <div className="privacy-copy">
             <div className="section-kicker">PRIVACY WITH PROOF</div>
             <h2>Your context is<br /><em>yours to control.</em></h2>
-            <p>Veil is deliberately consent-first. Capture begins only when you start it, local data stays separated by account, and screen-share protection is a control—not a promise of invisibility.</p>
+            <p>Private, discreet, and under your control.
+Veil only captures when you choose, strictly isolates your account data, and stays hidden during screen shares giving you real-time support without breaking your flow.</p>
             <a href="#principles">Read the principles <Arrow /></a>
           </div>
           <div className="privacy-console" id="principles">
@@ -165,7 +168,7 @@ export default function Home() {
         <span className="cta-orb orb-a" aria-hidden="true" /><span className="cta-orb orb-b" aria-hidden="true" />
         <div className="mini-logo"><span className="brand-mark" /></div>
         <h2>Ready for the room?</h2>
-        <p>Bring a calmer, sharper copilot to your next call.</p>
+        <p>Bring a calmer, sharper assistant to your next call.</p>
         <a className="button button-primary" href="https://github.com/punkuz/veil-assist/releases/download/v0.6.0-beta.1/Veil.Assist-0.6.0-beta.1-arm64.dmg">Download for macOS <Arrow /></a>
         <small>Beta 0.6.0 · Apple silicon</small>
       </section>
