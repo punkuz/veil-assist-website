@@ -21,7 +21,7 @@ export default function Home() {
           <a href="#privacy">Privacy</a>
           <a href="#how">How it works</a>
         </div>
-        <a className="nav-cta" href="#download">Get Veil <Arrow /></a>
+        <a className="nav-cta" href="https://github.com/punkuz/veil-assist/releases/download/v0.6.0-beta.1/Veil.Assist-0.6.0-beta.1-arm64.dmg">Get Veil <Arrow /></a>
       </nav>
 
       <section className="hero shell-width" id="top">
@@ -166,8 +166,8 @@ export default function Home() {
         <div className="mini-logo"><span className="brand-mark" /></div>
         <h2>Ready for the room?</h2>
         <p>Bring a calmer, sharper copilot to your next call.</p>
-        <a className="button button-primary" href="mailto:hello@veil-assist.app?subject=Veil%20Assist%20early%20access">Request early access <Arrow /></a>
-        <small>macOS first · Windows support included in the project</small>
+        <a className="button button-primary" href="https://github.com/punkuz/veil-assist/releases/download/v0.6.0-beta.1/Veil.Assist-0.6.0-beta.1-arm64.dmg">Download for macOS <Arrow /></a>
+        <small>Beta 0.6.0 · Apple silicon</small>
       </section>
 
       <footer className="footer shell-width">
