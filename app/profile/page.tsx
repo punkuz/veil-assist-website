@@ -136,10 +136,13 @@ export default function ProfilePage() {
           </article>
 
           <article className="profile-card download-card">
-            <div><span className="mini-mark" /><small>VEIL FOR MACOS</small></div>
+            <div><span className="mini-mark" /><small>VEIL FOR DESKTOP</small></div>
             <h3>Your assistant is ready.</h3>
-            <p>Download the latest Apple-silicon beta and sign in with this account.</p>
-            <a href="https://github.com/punkuz/veil-releases/releases/download/v0.6.0-beta.2/Veil.Assist-0.6.0-beta.2-arm64.dmg">Download beta <span>↓</span></a>
+            <p>Choose your platform, install the latest beta, and sign in with this account.</p>
+            <div className="profile-download-actions">
+              <a href="https://github.com/punkuz/veil-releases/releases/download/v0.6.0-beta.2/Veil.Assist-0.6.0-beta.2-arm64.dmg">macOS <span>↓</span></a>
+              <a href="https://github.com/punkuz/veil-releases/releases/download/v0.6.0-beta.3/Veil.Assist.Setup.0.6.0-beta.3.exe">Windows <span>↓</span></a>
+            </div>
           </article>
         </div>
       </section>
