@@ -18,6 +18,7 @@ export default function Home() {
         </a>
         <div className="nav-links">
           <a href="#product">Product</a>
+          <a href="#pricing">Pricing</a>
           <a href="#privacy">Privacy</a>
           <a href="#how">How it works</a>
         </div>
@@ -129,6 +130,58 @@ export default function Home() {
             </div>
             <div className="card-copy"><span className="card-number">04</span><h3>There when you need it</h3><p>Summon, hide, or reposition Veil without leaving the keyboard. Always close, never in the way.</p></div>
           </article>
+        </div>
+      </section>
+
+      <section className="pricing-section" id="pricing">
+        <div className="pricing-glow" aria-hidden="true" />
+        <div className="shell-width pricing-wrap">
+          <div className="section-kicker">SIMPLE, FLEXIBLE PRICING</div>
+          <div className="pricing-heading">
+            <h2>Pay for the time<br /><em>you actually use.</em></h2>
+            <p>Start free, then top up whenever you need more. No subscription and no recurring bill.</p>
+          </div>
+
+          <div className="pricing-grid">
+            <article className="price-card">
+              <div className="price-card-head"><span>Free Trial</span><small>TRY VEIL</small></div>
+              <div className="price"><sup>$</sup><strong>0</strong></div>
+              <div className="price-divider" />
+              <p><b>3 × 10-minute</b> sessions</p>
+              <span className="price-note">One-time trial</span>
+              <a href="https://github.com/punkuz/veil-assist/releases/download/v0.6.0-beta.1/Veil.Assist-0.6.0-beta.1-arm64.dmg">Start free <Arrow /></a>
+            </article>
+
+            <article className="price-card">
+              <div className="price-card-head"><span>Starter</span><small>1 CREDIT</small></div>
+              <div className="price"><sup>$</sup><strong>5</strong></div>
+              <div className="price-divider" />
+              <p><b>30 minutes</b> of Veil</p>
+              <span className="price-note">Pay as you go</span>
+              <a href="#download">Get Starter <Arrow /></a>
+            </article>
+
+            <article className="price-card is-featured">
+              <div className="popular-label">MOST POPULAR</div>
+              <div className="price-card-head"><span>Plus Pack</span><small>3 CREDITS</small></div>
+              <div className="price"><sup>$</sup><strong>12</strong></div>
+              <div className="price-divider" />
+              <p><b>90 minutes</b> of Veil</p>
+              <span className="price-note">3 credits · Save 20%</span>
+              <a href="#download">Choose Plus <Arrow /></a>
+            </article>
+
+            <article className="price-card">
+              <div className="price-card-head"><span>Power Pack</span><small>10 CREDITS</small></div>
+              <div className="price"><sup>$</sup><strong>35</strong></div>
+              <div className="price-divider" />
+              <p><b>300 minutes</b> of Veil</p>
+              <span className="price-note">10 credits · Save 30%</span>
+              <a href="#download">Go Power <Arrow /></a>
+            </article>
+          </div>
+
+          <div className="pricing-foot"><span><i /> Credits never auto-renew</span><span>1 credit = 30 minutes</span></div>
         </div>
       </section>
 
