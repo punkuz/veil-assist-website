@@ -1,3 +1,5 @@
+import { env } from "cloudflare:workers";
+
 export type SupabaseUser = {
   id: string;
   email?: string;
@@ -18,8 +20,9 @@ const ACCESS_COOKIE = "veil_access";
 const REFRESH_COOKIE = "veil_refresh";
 
 function config() {
-  const url = process.env.SUPABASE_URL?.replace(/\/$/, "");
-  const key = process.env.SUPABASE_PUBLISHABLE_KEY;
+  const runtimeEnv = env as unknown as Record<string, string | undefined>;
+  const url = runtimeEnv.SUPABASE_URL?.replace(/\/$/, "");
+  const key = runtimeEnv.SUPABASE_PUBLISHABLE_KEY;
   if (!url || !key) throw new Error("Supabase authentication is not configured.");
   return { url, key };
 }
