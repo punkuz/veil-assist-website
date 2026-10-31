@@ -24,7 +24,20 @@ export async function GET(request: Request) {
 
   if (!response.ok) return json({ error: await responseError(response) }, 401, clearSessionHeaders(request));
   const user = await response.json();
-  return json({ user }, 200, refreshed ? sessionHeaders(refreshed, request) : undefined);
+  const entitlementResponse = await supabaseRequest("/rest/v1/rpc/get_session_entitlement", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${token}` },
+    body: "{}",
+  });
+  let entitlement = null;
+  let entitlementError = null;
+  if (entitlementResponse.ok) {
+    const data = await entitlementResponse.json();
+    entitlement = Array.isArray(data) ? data[0] ?? null : data;
+  } else {
+    entitlementError = await responseError(entitlementResponse);
+  }
+  return json({ user, entitlement, entitlementError }, 200, refreshed ? sessionHeaders(refreshed, request) : undefined);
 }
 
 export async function PATCH(request: Request) {

@@ -11,6 +11,12 @@ type User = {
   user_metadata?: { full_name?: string };
 };
 
+type Entitlement = {
+  role: "user" | "admin";
+  paid_credits: number;
+  trial_sessions_remaining: number;
+};
+
 function displayDate(value?: string) {
   if (!value) return "Not available";
   return new Intl.DateTimeFormat("en", { dateStyle: "medium", timeStyle: "short" }).format(new Date(value));
@@ -18,6 +24,8 @@ function displayDate(value?: string) {
 
 export default function ProfilePage() {
   const [user, setUser] = useState<User | null>(null);
+  const [entitlement, setEntitlement] = useState<Entitlement | null>(null);
+  const [entitlementError, setEntitlementError] = useState("");
   const [loading, setLoading] = useState(true);
   const [editing, setEditing] = useState(false);
   const [fullName, setFullName] = useState("");
@@ -30,11 +38,13 @@ export default function ProfilePage() {
           window.location.href = "/login";
           return null;
         }
-        return response.json() as Promise<{ user: User }>;
+        return response.json() as Promise<{ user: User; entitlement: Entitlement | null; entitlementError?: string | null }>;
       })
       .then((result) => {
         if (!result) return;
         setUser(result.user);
+        setEntitlement(result.entitlement);
+        setEntitlementError(result.entitlementError ?? "");
         setFullName(result.user.user_metadata?.full_name ?? "");
         setLoading(false);
       })
@@ -68,13 +78,16 @@ export default function ProfilePage() {
 
   const name = user.user_metadata?.full_name || user.email?.split("@")[0] || "Veil user";
   const initials = name.split(/\s+/).slice(0, 2).map((part) => part[0]?.toUpperCase()).join("");
+  const isAdmin = entitlement?.role === "admin";
+  const trials = Math.max(0, Number(entitlement?.trial_sessions_remaining ?? 0));
+  const paidCredits = Math.max(0, Number(entitlement?.paid_credits ?? 0));
 
   return (
     <main className="profile-page">
       <div className="profile-glow" />
       <nav className="profile-nav shell-width">
         <a className="brand" href="/"><span className="brand-mark" /><span>VEIL</span></a>
-        <div><a href="/">Website</a><a href="/#pricing">Pricing</a><button type="button" onClick={signOut}>Sign out</button></div>
+        <div><a href="/#pricing">Pricing</a><button type="button" onClick={signOut}>Sign out</button></div>
       </nav>
 
       <section className="profile-shell shell-width">
@@ -100,11 +113,18 @@ export default function ProfilePage() {
             </div>
           </article>
 
-          <article className="profile-card credit-card">
-            <div className="profile-card-label"><span>CURRENT ACCESS</span><i>TRIAL</i></div>
-            <div className="credit-orb">3</div>
-            <h3>Free trial sessions</h3>
-            <p>Three 10-minute sessions are included with your new account.</p>
+          <article className="profile-card balance-card">
+            <div className="profile-card-label"><span>SESSION BALANCE</span><i>{isAdmin ? "ADMIN" : "LIVE"}</i></div>
+            {entitlementError ? (
+              <div className="balance-error"><span>!</span><div><b>Balance unavailable</b><small>{entitlementError}</small></div></div>
+            ) : isAdmin ? (
+              <div className="admin-balance"><strong>∞</strong><div><b>Unlimited access</b><small>Administrator accounts do not consume trials or credits.</small></div></div>
+            ) : (
+              <div className="balance-grid">
+                <div className="balance-stat"><strong>{trials}</strong><span>Free trials</span><small>10 minutes each</small></div>
+                <div className="balance-stat is-paid"><strong>{paidCredits}</strong><span>Paid credits</span><small>30 minutes each</small></div>
+              </div>
+            )}
             <a href="/#pricing">View credit packs <span>↗</span></a>
           </article>
 
