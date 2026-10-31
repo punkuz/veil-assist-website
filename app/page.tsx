@@ -1,3 +1,5 @@
+import { AuthNav } from "./components/AuthNav";
+
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
 const Waveform = () => (
@@ -22,7 +24,7 @@ export default function Home() {
           <a href="#privacy">Privacy</a>
           <a href="#how">How it works</a>
         </div>
-        <a className="nav-cta" href="https://github.com/punkuz/veil-assist/releases/download/v0.6.0-beta.1/Veil.Assist-0.6.0-beta.1-arm64.dmg">Get Veil <Arrow /></a>
+        <div className="nav-actions"><AuthNav /><a className="nav-cta" href="https://github.com/punkuz/veil-assist/releases/download/v0.6.0-beta.1/Veil.Assist-0.6.0-beta.1-arm64.dmg">Get Veil <Arrow /></a></div>
       </nav>
 
       <section className="hero shell-width" id="top">
