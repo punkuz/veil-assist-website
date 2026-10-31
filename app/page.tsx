@@ -24,7 +24,7 @@ export default function Home() {
           <a href="#privacy">Privacy</a>
           <a href="#how">How it works</a>
         </div>
-        <div className="nav-actions"><AuthNav /><a className="nav-cta" href="https://github.com/punkuz/veil-assist/releases/download/v0.6.0-beta.2/Veil.Assist-0.6.0-beta.2-arm64.dmg">Get Veil <Arrow /></a></div>
+        <div className="nav-actions"><AuthNav /><a className="nav-cta" href="https://github.com/punkuz/veil-releases/releases/download/v0.6.0-beta.2/Veil.Assist-0.6.0-beta.2-arm64.dmg">Get Veil <Arrow /></a></div>
       </nav>
 
       <section className="hero shell-width" id="top">
@@ -151,7 +151,7 @@ export default function Home() {
               <div className="price-divider" />
               <p><b>3 × 10-minute</b> sessions</p>
               <span className="price-note">One-time trial</span>
-              <a href="https://github.com/punkuz/veil-assist/releases/download/v0.6.0-beta.2/Veil.Assist-0.6.0-beta.2-arm64.dmg">Start free <Arrow /></a>
+              <a href="https://github.com/punkuz/veil-releases/releases/download/v0.6.0-beta.2/Veil.Assist-0.6.0-beta.2-arm64.dmg">Start free <Arrow /></a>
             </article>
 
             <article className="price-card">
@@ -224,7 +224,7 @@ Veil only captures when you choose, strictly isolates your account data, and sta
         <div className="mini-logo"><span className="brand-mark" /></div>
         <h2>Ready for the room?</h2>
         <p>Bring a calmer, sharper assistant to your next call.</p>
-        <a className="button button-primary" href="https://github.com/punkuz/veil-assist/releases/download/v0.6.0-beta.2/Veil.Assist-0.6.0-beta.2-arm64.dmg">Download for macOS <Arrow /></a>
+        <a className="button button-primary" href="https://github.com/punkuz/veil-releases/releases/download/v0.6.0-beta.2/Veil.Assist-0.6.0-beta.2-arm64.dmg">Download for macOS <Arrow /></a>
         <small>Beta 0.6.0-beta.2 · Apple silicon</small>
       </section>
 

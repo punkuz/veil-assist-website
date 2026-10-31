@@ -139,7 +139,7 @@ export default function ProfilePage() {
             <div><span className="mini-mark" /><small>VEIL FOR MACOS</small></div>
             <h3>Your assistant is ready.</h3>
             <p>Download the latest Apple-silicon beta and sign in with this account.</p>
-            <a href="https://github.com/punkuz/veil-assist/releases/download/v0.6.0-beta.2/Veil.Assist-0.6.0-beta.2-arm64.dmg">Download beta <span>↓</span></a>
+            <a href="https://github.com/punkuz/veil-releases/releases/download/v0.6.0-beta.2/Veil.Assist-0.6.0-beta.2-arm64.dmg">Download beta <span>↓</span></a>
           </article>
         </div>
       </section>
