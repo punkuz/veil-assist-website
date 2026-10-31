@@ -76,7 +76,7 @@ export default function Home() {
                 <div className="answer-footer"><span>Generated from this conversation</span><button aria-label="Copy suggested answer">Copy</button></div>
               </div>
             </div>
-            <div className="app-status"><span><i /> Screen protected</span><span>⌘ ⇧ Space to show or hide</span></div>
+            <div className="app-status"><span><i /> Screen protected</span><span>⌘ / Ctrl + Shift + Space to show or hide</span></div>
           </div>
           <div className="floating-chip chip-left"><span>≋</span><div><small>LIVE TRANSCRIPT</small><b>Listening…</b></div></div>
           <div className="floating-chip chip-right"><span>✦</span><div><small>QUESTION DETECTED</small><b>Answer ready</b></div></div>
@@ -127,8 +127,12 @@ export default function Home() {
 
           <article className="bento bento-small shortcut-card">
             <div className="shortcut-demo">
+              <div className="shortcut-platform"><span>macOS</span></div>
               <div className="shortcut-line"><span>Show or hide</span><div className="key-row"><kbd>⌘</kbd><kbd>⇧</kbd><kbd className="key-wide">Space</kbd></div></div>
               <div className="shortcut-line"><span>Move Veil</span><div className="key-row"><kbd>⌘</kbd><kbd>⌥</kbd><kbd className="key-arrows">← ↑ ↓ →</kbd></div></div>
+              <div className="shortcut-platform is-windows"><span>Windows</span></div>
+              <div className="shortcut-line"><span>Show or hide</span><div className="key-row"><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd className="key-wide">Space</kbd></div></div>
+              <div className="shortcut-line"><span>Move Veil</span><div className="key-row"><kbd>Ctrl</kbd><kbd>Alt</kbd><kbd className="key-arrows">← ↑ ↓ →</kbd></div></div>
             </div>
             <div className="card-copy"><span className="card-number">04</span><h3>There when you need it</h3><p>Summon, hide, or reposition Veil without leaving the keyboard. Always close, never in the way.</p></div>
           </article>
