@@ -91,7 +91,7 @@ export default function LoginPage() {
     <main className="auth-page">
       <div className="auth-backdrop"><i /><i /><i /></div>
       <nav className="auth-nav">
-        <a className="brand" href="/"><span className="brand-mark" /><span>VEIL</span></a>
+        <a className="brand" href="/"><span className="brand-mark" /><span>VEIL</span><span className="beta-badge">BETA</span></a>
         <a href="/">Back to website <span>↗</span></a>
       </nav>
 

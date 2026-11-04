@@ -17,6 +17,7 @@ export default function Home() {
         <a className="brand" href="#top" aria-label="Veil Assist home">
           <span className="brand-mark" aria-hidden="true" />
           <span>VEIL</span>
+          <span className="beta-badge">BETA</span>
         </a>
         <div className="nav-links">
           <a href="#product">Product</a>
@@ -229,16 +230,17 @@ Veil only captures when you choose, strictly isolates your account data, and sta
         <h2>Ready for the room?</h2>
         <p>Bring a calmer, sharper assistant to your next call—now on macOS and Windows.</p>
         <div className="download-actions">
-          <a className="button button-primary" href="https://github.com/punkuz/veil-releases/releases/download/v0.6.0-beta.2/Veil.Assist-0.6.0-beta.2-arm64.dmg">Download for macOS <Arrow /></a>
-          <a className="button button-secondary" href="https://github.com/punkuz/veil-releases/releases/download/v0.6.0-beta.3/Veil.Assist.Setup.0.6.0-beta.3.exe">Download for Windows <Arrow /></a>
+          <a className="button button-primary" href="https://github.com/punkuz/veil-releases/releases/download/v0.7.0-beta.18/Veil.Assist-0.7.0-beta.18-arm64.dmg">Mac · Apple silicon <Arrow /></a>
+          <a className="button button-secondary" href="https://github.com/punkuz/veil-releases/releases/download/v0.7.0-beta.18/Veil.Assist-0.7.0-beta.18.dmg">Mac · Intel <Arrow /></a>
+          <a className="button button-secondary" href="https://github.com/punkuz/veil-releases/releases/download/v0.7.0-beta.18/Veil.Assist.Setup.0.7.0-beta.18.exe">Windows <Arrow /></a>
         </div>
-        <small>macOS beta 0.6.0-beta.2 · Apple silicon &nbsp;·&nbsp; Windows beta 0.6.0-beta.3</small>
+        <small>Beta 0.7.0-beta.18 · macOS Apple silicon &amp; Intel · Windows</small>
       </section>
 
       <footer className="footer shell-width">
         <a className="brand" href="#top"><span className="brand-mark" /> <span>VEIL</span></a>
         <p>Private assistance for focused work.</p>
-        <div><a href="#privacy">Privacy</a><a href="#product">Product</a><span>© 2026 Veil Assist</span></div>
+        <div><a href="#privacy">Privacy</a><a href="#product">Product</a><a className="developer-credit" href="https://portfolio-punkuz.punkuzshah.workers.dev/" target="_blank" rel="noreferrer">Developed by Punkuz Shah ↗</a><span>© 2026 Veil Assist</span></div>
       </footer>
     </main>
   );

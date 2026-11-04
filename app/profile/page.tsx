@@ -86,7 +86,7 @@ export default function ProfilePage() {
     <main className="profile-page">
       <div className="profile-glow" />
       <nav className="profile-nav shell-width">
-        <a className="brand" href="/"><span className="brand-mark" /><span>VEIL</span></a>
+        <a className="brand" href="/"><span className="brand-mark" /><span>VEIL</span><span className="beta-badge">BETA</span></a>
         <div><a href="/#pricing">Pricing</a><button type="button" onClick={signOut}>Sign out</button></div>
       </nav>
 
@@ -140,8 +140,9 @@ export default function ProfilePage() {
             <h3>Your assistant is ready.</h3>
             <p>Choose your platform, install the latest beta, and sign in with this account.</p>
             <div className="profile-download-actions">
-              <a href="https://github.com/punkuz/veil-releases/releases/download/v0.6.0-beta.2/Veil.Assist-0.6.0-beta.2-arm64.dmg">macOS <span>↓</span></a>
-              <a href="https://github.com/punkuz/veil-releases/releases/download/v0.6.0-beta.3/Veil.Assist.Setup.0.6.0-beta.3.exe">Windows <span>↓</span></a>
+              <a href="https://github.com/punkuz/veil-releases/releases/download/v0.7.0-beta.18/Veil.Assist-0.7.0-beta.18-arm64.dmg">Mac · Apple <span>↓</span></a>
+              <a href="https://github.com/punkuz/veil-releases/releases/download/v0.7.0-beta.18/Veil.Assist-0.7.0-beta.18.dmg">Mac · Intel <span>↓</span></a>
+              <a href="https://github.com/punkuz/veil-releases/releases/download/v0.7.0-beta.18/Veil.Assist.Setup.0.7.0-beta.18.exe">Windows <span>↓</span></a>
             </div>
           </article>
         </div>
