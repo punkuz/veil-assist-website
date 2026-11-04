@@ -240,7 +240,7 @@ Veil only captures when you choose, strictly isolates your account data, and sta
       <footer className="footer shell-width">
         <div className="footer-brand-group">
           <a className="brand" href="#top"><span className="brand-mark" /> <span>VEIL</span></a>
-          <a className="developer-credit" href="https://portfolio-punkuz.punkuzshah.workers.dev/" target="_blank" rel="noreferrer">Developed by Punkuz Shah ↗</a>
+          <a className="developer-credit" href="https://punkuzshah.com.np/" target="_blank" rel="noreferrer">Developed by Punkuz Shah ↗</a>
         </div>
         <p>Private assistance for focused work.</p>
         <div className="footer-links"><a href="#privacy">Privacy</a><a href="#product">Product</a><span>© 2026 Veil Assist</span></div>
