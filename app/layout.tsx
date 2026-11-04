@@ -9,11 +9,11 @@ export async function generateMetadata(): Promise<Metadata> {
   const origin = `${protocol}://${host}`;
 
   return {
-    title: "Veil Assist — Stay present. Veil keeps up.",
+    title: "Veil Assist Stay present. Veil keeps up.",
     description: "A privacy-aware floating desktop assistant for calls, presentations, and focused work.",
     icons: { icon: "/veil-icon.svg", shortcut: "/veil-icon.svg" },
     openGraph: {
-      title: "Veil Assist — Stay present. Veil keeps up.",
+      title: "Veil Assist Stay present. Veil keeps up.",
       description: "A calm, floating assistant for calls and presentations.",
       type: "website",
       images: [{ url: `${origin}/og.png`, width: 1200, height: 630, alt: "Veil Assist — Stay present. Veil keeps up." }],

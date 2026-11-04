@@ -228,7 +228,7 @@ Veil only captures when you choose, strictly isolates your account data, and sta
         <span className="cta-orb orb-a" aria-hidden="true" /><span className="cta-orb orb-b" aria-hidden="true" />
         <div className="mini-logo"><span className="brand-mark" /></div>
         <h2>Ready for the room?</h2>
-        <p>Bring a calmer, sharper assistant to your next call—now on macOS and Windows.</p>
+        <p>Bring a calmer, sharper assistant to your next call now on macOS and Windows.</p>
         <div className="download-actions">
           <a className="button button-primary" href="https://github.com/punkuz/veil-releases/releases/download/v0.7.0-beta.18/Veil.Assist-0.7.0-beta.18-arm64.dmg">Mac · Apple silicon <Arrow /></a>
           <a className="button button-secondary" href="https://github.com/punkuz/veil-releases/releases/download/v0.7.0-beta.18/Veil.Assist-0.7.0-beta.18.dmg">Mac · Intel <Arrow /></a>
